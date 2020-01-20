@@ -57,5 +57,5 @@ class YourappConfig(AppConfig):
 python manage.py runserver
 
 ```
-:ci:
-:bowtie:
+
+https:nan.ci
