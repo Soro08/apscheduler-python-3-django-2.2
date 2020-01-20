@@ -56,4 +56,5 @@ class YourappConfig(AppConfig):
 ```
 python manage.py runserver
 
+```
 :ci:
