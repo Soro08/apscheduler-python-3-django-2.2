@@ -49,6 +49,11 @@ class YourappConfig(AppConfig):
         
         
       
+      
+scheduler = BackgroundScheduler()
+scheduler.add_job(quizz.submit_quizz, 'date', run_date=quizz.quizz.datetime_valide)
+scheduler.start()
+
 
 ```
 # test
