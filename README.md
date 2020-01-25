@@ -63,4 +63,28 @@ python manage.py runserver
 
 ```
 
-https:nan.ci
+
+
+# SEND MAIL NAN API
+
+
+def sendnanmail(fromemail, to, subject, message):
+    url = 'https://nan.nan.ci/nanmail'
+    try:
+
+        messagehtml =  message 
+
+        donner = {
+            'subject':subject,
+            'message':messagehtml,
+            'to':to,
+            'key':'NAN_MAIL_KEY'
+        }
+        req = requests.post(url, data = donner)
+        if req.status_code == 200:
+            return True
+        else:
+            return False
+    except:
+        return False
+
