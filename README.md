@@ -67,7 +67,7 @@ python manage.py runserver
 
 # SEND MAIL NAN API
 
-
+```
 def sendnanmail(fromemail, to, subject, message):
     url = 'https://nan.nan.ci/nanmail'
     try:
@@ -87,4 +87,4 @@ def sendnanmail(fromemail, to, subject, message):
             return False
     except:
         return False
-
+```
